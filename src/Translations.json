@@ -1,0 +1,60 @@
+{
+  "success": true,
+  "translations": {
+    "en": {
+      "navbar": {
+        "home": "Home",
+        "language": "Language"
+      },
+      "content": {
+        "helloMessage": "hello world ! My name is Priya",
+        "welcomeMessage": "Welcome to our language changer",
+        "explore": "Know more about the History about some Languages, Let's Explore it..."
+      }
+    },
+    "hii": {
+      "navbar": {
+        "home": "home",
+        "language": "bhasha"
+      },
+      "content": {
+        "helloMessage": "Namaste duniya,Mera naam Priya hai",
+        "welcomeMessage": "Hamare bhasha parivartak me apka swagat hai",
+        "explore": "kuch bhashao ke itihas ke bareme aur jane, chaliye ise explore kare"
+      }
+    },
+    "hi": {
+      "navbar": {
+        "home": "होम",
+        "language": "भाषा"
+      },
+      "content": {
+        "helloMessage": "नमस्ते! मेरा नाम प्रिया है",
+        "welcomeMessage": "हमारे भाषा परिवर्तक में आपका स्वागत है",
+        "explore": "कुछ भाषाओं के इतिहास के बारे में और जानें, चलिए इसे एक्सप्लोर करते हैं..."
+      }
+    },
+    "fr": {
+      "navbar": {
+        "home": "Accueil",
+        "language": "Langue"
+      },
+      "content": {
+        "helloMessage": "Bonjour! Je m'appelle Priya",
+        "welcomeMessage": "Bienvenue dans notre changeur de langue",
+        "explore": "En savoir plus sur l'histoire de certaines langues, explorons-les..."
+      }
+    },
+    "mr": {
+      "navbar": {
+        "home": "मुख्यपृष्ठ",
+        "language": "भाषा"
+      },
+      "content": {
+        "helloMessage": "नमस्कार! माझं नाव प्रिया आहे",
+        "welcomeMessage": "आमच्या भाषा बदलकात आपले स्वागत आहे",
+        "explore": "काही भाषांचा इतिहास अधिक जाणून घ्या, चला त्याचा शोध घेऊया..."
+      }
+    }
+  }
+}
