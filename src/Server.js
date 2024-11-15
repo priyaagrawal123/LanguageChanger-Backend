@@ -4,18 +4,14 @@ const PORT = 5000;
 // Import cors package
 const cors = require("cors");
 
-// Enable CORS for all routes
-app.use(cors());
+app.use(cors());  //here i have used cors to entable conncetion through different origins
 
 
-// Import translations.json
 const translations = require('./Translations.json').translations;
 
-// Define route to serve translations based on language
 app.get('/hello', (req, res) => {
-  const language = req.query.language || "English"; // Default to English if language is not provided
-
-  // Language mapping to avoid duplicate keys
+  const language = req.query.language || "English";    //default langugae set to english if no language is choosen (in the postman also this default langugage will set if no language is choosen)
+//language keys to uniquely identify each langugae
   const languageKey = {
     English: "en",
     Hindi1: "hii",
@@ -27,7 +23,6 @@ app.get('/hello', (req, res) => {
   console.log("Language Requested:", language);
   console.log("Mapped Language Key:", languageKey);
 
-  // Check if the language key exists in translations.json
   if (languageKey && translations[languageKey]) {
     const translationContent = translations[languageKey].content;
 
@@ -36,6 +31,7 @@ app.get('/hello', (req, res) => {
       message: translationContent.helloMessage.replace("{name}", "Priya"),
       welcome: translationContent.welcomeMessage,
       explore: translationContent.explore,
+
     });
   } else {
     res.status(404).json({
@@ -46,7 +42,6 @@ app.get('/hello', (req, res) => {
 });
 
 
-// Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });

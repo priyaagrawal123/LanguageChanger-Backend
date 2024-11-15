@@ -3,7 +3,7 @@
   "translations": {
     "en": {
       "navbar": {
-        "home": "Home",
+        "home": "Home",  
         "language": "Language"
       },
       "content": {
